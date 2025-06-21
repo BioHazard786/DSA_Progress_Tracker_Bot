@@ -1,0 +1,7 @@
+*__pycache__*
+*.session*
+*.vscode*
+*.env
+*.log
+*.txt
+test.py
