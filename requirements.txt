@@ -1,0 +1,6 @@
+kurigram
+tgCrypto
+psutil
+httpx
+motor
+uvloop

@@ -3,8 +3,8 @@
 *.vscode*
 *.env
 *.log
-*.txt
 *.json
 *.html
 ./*.py
 test.py
+logs.txt

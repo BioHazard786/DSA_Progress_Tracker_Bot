@@ -3,5 +3,5 @@
 *.vscode*
 *.env
 *.log
-*.txt
 test.py
+logs.txt
