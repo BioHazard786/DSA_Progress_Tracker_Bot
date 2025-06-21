@@ -4,3 +4,4 @@ psutil
 httpx
 motor
 uvloop
+python-dotenv

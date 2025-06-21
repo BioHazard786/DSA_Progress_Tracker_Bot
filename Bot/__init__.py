@@ -7,9 +7,9 @@ from pyrogram import Client, enums
 from os.path import dirname, basename, isfile, join
 from Bot.constants import BANNER
 from Bot.logging import LOGGER
-# import uvloop
+import uvloop
 
-# uvloop.install()  # Optional: Use uvloop for better performance
+uvloop.install()  # Optional: Use uvloop for better performance
 __all__ = ["bot", "loop"]
 
 LOGGER(__name__).info(BANNER)
