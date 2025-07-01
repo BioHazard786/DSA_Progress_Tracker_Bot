@@ -60,3 +60,27 @@ async def add_leetcode_user(client: Client, message: Message):
         "<i>Do you want to add this user?</i>",
         reply_markup=button,
     )
+
+
+@bot.on_message(command_creator("delete_leetcode_user"))
+async def delete_leetcode_user(client: Client, message: Message):
+    button = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(
+                    text="Confirm",
+                    callback_data=f"l_d_confirm|{message.from_user.id}",
+                ),
+                InlineKeyboardButton(
+                    text="Delete",
+                    callback_data=f"d_delete|{message.from_user.id}",
+                ),
+            ]
+        ]
+    )
+
+    await message.reply(
+        text="<b>Are you sure you want to delete your Leetcode user?</b>\n"
+        "<i>This action cannot be undone.</i>",
+        reply_markup=button,
+    )
